@@ -4,6 +4,8 @@ import axios from 'axios';
 function App() {
 
   const [coordenation, setCoordination] = useState(false);
+  const [weather, setWeather] = useState(false);
+
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
